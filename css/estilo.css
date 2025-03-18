@@ -1,10 +1,13 @@
-/* Estils generals */
-body {
-    font-family: Arial, sans-serif;
+/* Estilos generales */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #c8a2a2;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 /* Capçalera */
@@ -15,21 +18,30 @@ header {
     color: rgb(25, 156, 156);
 }
 
-/* Secció de projectes */
+/* Sección de proyectos */
 .projects {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    gap: 20px;
 }
 
 .project {
     display: flex;
     align-items: center;
-    background: rgb(212, 200, 200);
+    justify-content: space-between;
+    background: #fff;
     padding: 20px;
-    width: 100%;
+    width: 90%;
     max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Alternar imágenes y textos */
+.project:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 .project .text {
@@ -44,19 +56,21 @@ header {
 
 /* Fondo para cada proyecto */
 .project-1 {
-    background-color: #ffcccc; /* Color de fondo para el primer proyecto */
-    color: #333;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
 }
 
 .project-2 {
-    background-color: #ccffcc; /* Color de fondo para el segundo proyecto */
-    color: #333;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
 }
 
 .project-3 {
-    background-color: #ccccff; /* Color de fondo para el tercer proyecto */
-    color: #333;
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    color: white;
 }
+
+/* Footer */
 footer {
     background-color: black;
     color: white;
@@ -91,14 +105,20 @@ footer {
     margin: 5px 0;
 }
 
-/* Disseny Responsive */
-@media (min-width: 768px) {
-    .projects {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+/* Diseño Responsive */
+@media (max-width: 768px) {
     .project {
-        width: 45%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project .image img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
     }
 }
