@@ -57,17 +57,18 @@ header {
 /* Fondo para cada proyecto */
 .project-1 {
     background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .project-2 {
     background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: white;
+    color: rgb(0, 0, 0);
+    text-align: right;
 }
 
 .project-3 {
     background: linear-gradient(135deg, #11998e, #38ef7d);
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /* Footer */
