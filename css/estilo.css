@@ -10,10 +10,29 @@ body {
     background-color: #ffffff;
 }
 
+h1 {
+    font-size: 63px;
+    color: rgb(13, 101, 133);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 42px;
+    color: rgb(163, 158, 158);
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
 /* Mobile development */
 .mobile-dev {
-    font-size: 14px;
+    font-size: 18px;
     color: black;
+    margin-left: 13%;
     padding: 15px;
 }
 
@@ -30,59 +49,56 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    gap: 20px;
 }
 
 .project {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background: #fff;
-    padding: 20px;
-    width: 90%;
-    max-width: 800px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    gap: 20px;
-}
-
-/* Alternar imágenes y textos */
-.project:nth-child(even) {
-    flex-direction: row-reverse;
+    width: 100%;
 }
 
 .project .text {
     flex: 1;
-    padding: 20px;
+    max-width: 400px;
+    margin-left: 18%;
+    margin-right: 25px;
+}
+
+.project .image {
+    flex: 1;
+    display: flex;
+    max-width: 700px;
+    margin-top: 20px;
 }
 
 .project .image img {
     width: 100%;
-    max-width: 250px;
-    border-radius: 10px;
+    max-width: 350px;
+    margin-bottom: 20px; 
+    margin-left: 39%;
 }
 
 /* Fondo para cada proyecto */
 .project-1 {
-    background: #f7f0ff;
+    background: #F5EEF5;
     color: black;
 }
 
 .project-2 {
-    background: #fff4ed;
+    background: #FAF5F3;
     color: black;
 }
 
 .project-3 {
-    background: #e5f8f3;
+    background: #F2F9F8;
     color: black;
 }
 
 /* Footer */
 footer {
-    background-color: black;
+    background-color: #000000;
     color: white;
-    text-align: center;
     padding: 40px 20px;
 }
 
@@ -92,6 +108,8 @@ footer {
     gap: 50px;
     flex-wrap: wrap;
     margin-top: 20px;
+    margin-left: 60px;
+    text-align: center;
 }
 
 .footer-column {
@@ -116,12 +134,19 @@ footer {
     margin: 5px 0;
 }
 
+span {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-align: left;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
 /* Diseño Responsive */
 @media (max-width: 768px) {
     /* Imágenes debajo del texto */
     .project {
         flex-direction: column;
-        text-align: center;
         padding: 15px;
     }
 
@@ -130,16 +155,19 @@ footer {
     }
 
     .project .image {
-        order: 2; /* Asegura que la imagen quede debajo */
+        order: 1;
     }
 
     .project .text {
         order: 1;
+        margin-left: 0;
     }
 
     .project .image img {
         width: 100%;
         max-width: 300px;
+        margin-left: 3%;
+        margin-top: 10px;
     }
 
     /* Footer en 2 columnas en lugar de 4 */
@@ -153,6 +181,4 @@ footer {
     .footer-column {
         text-align: left;
     }
-}
-
-
+} 
