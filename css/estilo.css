@@ -32,7 +32,7 @@ h3 {
 .mobile-dev {
     font-size: 18px;
     color: black;
-    margin-left: 18%;
+    margin-left: 13%;
     padding: 15px;
 }
 
@@ -61,7 +61,7 @@ header {
 .project .text {
     flex: 1;
     max-width: 400px;
-    margin-left: 18%;
+    margin-left: 16%;
     margin-right: 25px;
 }
 
@@ -70,14 +70,13 @@ header {
     display: flex;
     max-width: 700px;
     margin-top: 20px;
-    width: 50%;
 }
 
 .project .image img {
-    width: 50%;
+    width: 100%;
     max-width: 350px;
     margin-bottom: 20px; 
-    margin-left: 39%;
+    margin-left: 35%;
 }
 
 /* Fondo para cada proyecto */
@@ -109,7 +108,7 @@ footer {
     gap: 50px;
     flex-wrap: wrap;
     margin-top: 20px;
-    margin-left: 80px;
+    margin-left: 60px;
     text-align: center;
 }
 
@@ -121,7 +120,7 @@ footer {
 }
 
 .footer-column h4 {
-    font-size: 25px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
@@ -131,13 +130,13 @@ footer {
 }
 
 .footer-column ul li {
-    font-size: 22px;
+    font-size: 14px;
     margin: 5px 0;
 }
 
 span {
     color: rgb(255, 255, 255);
-    font-size: 30px;
+    font-size: 24px;
     text-align: left;
     margin-left: 60px;
     margin-bottom: 20px;
