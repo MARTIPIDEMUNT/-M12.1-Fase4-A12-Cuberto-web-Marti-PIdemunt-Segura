@@ -11,28 +11,28 @@ body {
 }
 
 h1 {
-    font-size: 67px;
+    font-size: 75px;
     color: rgb(13, 101, 133);
     margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 46px;
+    font-size: 50px;
     color: rgb(163, 158, 158);
     margin-bottom: 10px;
 }
 
 h3 {
-    font-size: 35px;
+    font-size: 39px;
     color: rgb(0, 0, 0);
     margin-bottom: 10px;
 }
 
 /* Mobile development */
 .mobile-dev {
-    font-size: 18px;
+    font-size: 20px;
     color: black;
-    margin-left: 16%;
+    margin-left: 25%;
     padding: 15px;
 }
 
@@ -76,7 +76,7 @@ header {
     width: 100%;
     max-width: 350px;
     margin-bottom: 20px; 
-    margin-left: 39%;
+    margin-left: 40%;
 }
 
 /* Fondo para cada proyecto */
@@ -120,7 +120,7 @@ footer {
 }
 
 .footer-column h4 {
-    font-size: 16px;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 
@@ -136,7 +136,7 @@ footer {
 
 span {
     color: rgb(255, 255, 255);
-    font-size: 24px;
+    font-size: 30px;
     text-align: left;
     margin-left: 60px;
     margin-bottom: 20px;
